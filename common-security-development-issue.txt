@@ -1,0 +1,24 @@
+## secure development life cycle
+  - apps focus too much on functionality, how to get more users but not security
+  - recommended to take security courses
+
+## open web security projects (OWASP) - google this
+
+## most common security issues  
+  - transport layer security: 
+    - cipher suite: what is this?
+    - protocol
+    - some users use very old brownser which does not support the product, how to deal with this problem
+
+  - missing security header
+    - x-frame-options
+    - http strict transport security
+    - content-security-policy
+    - cache policy
+    - http vs meta header
+
+  - insecure cookies
+
+  - cross site scripting
+
+  - sql injection
