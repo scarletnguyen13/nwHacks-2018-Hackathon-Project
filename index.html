@@ -5,17 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
-  <p>Enter your pair</p>
-  <input id="item1" type="text" placeholder="Item 1">
-  <input id="item2" type="text" placeholder="Item 2">
-  <button id="submit">Submit</button>
-  <div class="generatedPair"></div>
+<body onload="checkEmpty()">
+  <div id="inputWrap">
+    <p>Matching Game</p>
+    <div class="inputWrap">    
+        <input id="item1" class="input" type="text" placeholder="Item 1">
+        <input id="item2" class="input" type="text" placeholder="Item 2">
+        <button id="submit">Add</button>
+    </div>
+  </div>
 
-
-
+  <div class="generatedPair">
+    <ul id="item1List"></ul>
+    <ul id="item2List"></ul>
+  </div>
+  
+  <button id="start">Start</button>
+  <button id="newGame">New Game</button>
+  
   <script src="script.js"></script>
+
 </body>
 </html>
